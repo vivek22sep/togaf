@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Integration Diagram Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <h1>Integration Diagram Generator</h1>
+    <div>
+        <label>Source: <input id="source" placeholder="System A"></label>
+        <label>Destination: <input id="destination" placeholder="System B"></label>
+    </div>
+    <div>
+        <label><input type="checkbox" name="component" value="APIGW"> API Gateway</label>
+        <label><input type="checkbox" name="component" value="ESB"> ESB</label>
+        <label><input type="checkbox" name="component" value="MQ"> MQ</label>
+        <label><input type="checkbox" name="component" value="Kafka"> Kafka</label>
+    </div>
+    <button id="generate">Generate Diagram</button>
+    <div id="diagram"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
